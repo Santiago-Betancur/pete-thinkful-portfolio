@@ -9,6 +9,7 @@ body {
 }
 
 /* Set the font family for any h1, h2, or h3 heading */
+/****TYPOGRAPHY STYLES */
 h1,
 h2,
 h3 {
@@ -18,7 +19,7 @@ h3 {
 h2{
   font-size: 1.5rem;
 }
-
+/*Alinge  header content to the center*/
 header {
   text-align: center;
 }
@@ -55,23 +56,29 @@ hr {
   border: 1px solid black;
 }
 
-a:link {
-  color:blue;
+a {
+  color:#d62828;
 }
 
+/*disabled for project purpose:
 a:visited {
+  color: purple;}
+*/
+
+a:hover {
   color: #f77f00;
 }
 
-a:hover {
-  color: #d62828;
-}
-
+/*disabled for project purpose:
+a:active: {
+  color: #f77f00;
+} 
+*/
 
 /* Add your solution below */
-
+/*Border radius at 50% will give the image circle appareance as long as the image is a perfect square*/
+/*added and border of 2 pixel of thicknes going around the image with color  #003049*/
 .image-circle {
   border: 2px solid #003049;
   border-radius: 50%;
-  
 }
