@@ -1,28 +1,42 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
+  background-color: #eae2b7;
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
-  background-color: #eae2b7;
 }
 
-/* Set the font family for any h1, h2, or h3 heading */
-/****TYPOGRAPHY STYLES */
+/* Headings */
 h1,
 h2,
 h3 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
 }
-h2{
-  font-size: 1.5rem;
-}
-/*Alinge  header content to the center*/
+
+/* Header */
 header {
   text-align: center;
 }
+
+.header-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+  margin-left: 15px;
+}
+/* Containers */
+div {
+  background-color: #eae2b7;
+  margin: auto;
+  width: 600px;
+}
+
 article {
   padding: 50px 0;
 }
@@ -32,53 +46,57 @@ article div {
   width: 100%;
 }
 
+.about-redo{
+  display: flex;
+}
+.portfolio-container{
+  display: flex;
+  
+}
+.art-card{
+  display: flex;
+  flex-direction: column;
+  
+}
+/* Paragraphs */
 p {
   line-height: 1.5;
 }
-
-/* The div container constrains the content width within the main container to 600px */
-div {
-  margin: 0 auto;
-  width: 600px;
+.about-section {
+  width: 100%;
+  text-align: left;
+}
+/* Links */
+a:link {
+  color: #d62828;
 }
 
+a:hover {
+  color: #f77f00;
+}
+
+nav a {
+  padding-left: 20px;
+}
+
+/* Images */
 img {
   width: 100%;
   max-width: 200px;
   height: auto;
 }
 
-footer{
-  text-align: center;
-}
-
-hr {
-  border: 1px solid black;
-}
-
-a {
-  color:#d62828;
-}
-
-/*disabled for project purpose:
-a:visited {
-  color: purple;}
-*/
-
-a:hover {
-  color: #f77f00;
-}
-
-/*disabled for project purpose:
-a:active: {
-  color: #f77f00;
-} 
-*/
-
-/* Add your solution below */
-/*Border radius at 50% will give the image circle appareance as long as the image is a perfect square*/
-/*added and border of 2 pixel of thicknes going around the image with color  #003049*/
 .image-circle {
   border: 2px solid #003049;
   border-radius: 50%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+/* Other page elements */
+hr {
+  border: 1px solid black;
 }
